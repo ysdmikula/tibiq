@@ -25,7 +25,6 @@ class TaskController extends Controller
      */
     public function store(TaskRequest $request)
     {
-        // dd(Task::where("date", $formFields["date"])->count());
 
         Task::create([
             "name" => $request->name,
@@ -51,7 +50,6 @@ class TaskController extends Controller
      */
     public function update(TaskRequest $request, Task $task)
     {
-        // dd(Task::where("date", $formFields["date"])->count());
 
         $task->update([
             "name" => $request->name,
